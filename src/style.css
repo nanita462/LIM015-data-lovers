@@ -1,0 +1,34 @@
+body{
+    background: url(img/fondopoke.png);
+    
+}
+
+
+ 
+
+
+
+
+.navegacion--principal{
+    
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.nav--background{
+    background-color: #373ca2;
+    color: #ffffff;
+}
+
+.contenedor{
+    
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.input--ordenar{
+    margin-top: 35px;
+   
+}
