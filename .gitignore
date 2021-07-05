@@ -2,5 +2,5 @@
 *.swp
 coverage/
 node_modules/
-package-lock
-package
+package-lock/
+package/

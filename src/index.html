@@ -8,39 +8,56 @@
   
   
   <body>
-    <header>
-      <img src="img/logopoke.png" >
-    </header>
-   <div class="nav--background">
-    <nav class="navegacion--principal contenedor">
-      <a>Inicio</a>
-      <a>Pokedex</a>
-      <a>Play</a>
-      <a>Torneos</a>
-    </nav>
-  </div>
-    <main>
-      
-      <section class="input--ordenar">
-        <label>ORDENAR</label>
-        <select name="orden" id="asc/desc">
-          <option value="">ASCENDENTE</option>
-          <option value="">DESCENDENTE</option>
 
-          <label>FILTRAR</label>
-          <select name="orden" id="asc/desc">
-            <option value="">ASCENDENTE</option>
-            <option value="">DESCENDENTE</option>
-        </select>
-      
+<section class="display-1" id="display1">
+  <img class="fondo" src="img/fondoPokePant1.jpg" alt="">
+  <h1>BIENVENIDO</h1>
+  <button>Entrar</button>
 
+</section>
+
+    <section class="display-2" id="display2">
+      <img src="img/logopoke.png" alt="">
+      <nav>
+        <a href="#">Inicio</a>
+        <button class="poke-Data" id="pokeData">Pokedex</button>
+        <a href="#">Play</a>
+        <a href="#">Torneos</a>
+      </nav>
+   
+
+     <main>
+
+      <aside class="category-P" id="categoryP">
+        <h2>CATEGORIAS</h2>
+
+        <P>FUEGO</P>
+        <P>AIRE</P>
+        <P>AGUA</P>
+        <P>PODER</P>
+        <P>EVOLUCION</P>
+
+      </aside>
+
+      <section>
+        <input type="ORDEN">
+        <input type="FILTRO">
       </section>
 
-     
+      <section id="lista" class="lista">
+      </section>
 
-    </main>
+      </main>
 
-   
+
+
+
+
+    </section>
+
+
+
+
 
 
     <div id="root"></div>
