@@ -1,7 +1,47 @@
-body{
-    background: url(img/fondopoke.png);
+.display1{
+    display: block;
+    background-image: url(img/fondoPokePant1.jpg);
+    background-size: cover;
+}
+.display2{
+    display: none;
+}
+
+.fondo{
+    width: 1200px;
+    height: 600px; 
+}
+ 
+figure{
+    background-color: #b9d163;
+    width: 200px;
+    height: 190px;
+    margin: 10px;
+    border-radius: 10px;
     
 }
+
+namPokemon{
+    text-align: end;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+CPPokemon{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lista{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    background: khaki;
+    }
+
+
+
+
+
 .navegacion--principal{
     
     padding: 10px;
