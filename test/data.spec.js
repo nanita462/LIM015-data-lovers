@@ -1,4 +1,4 @@
-import { example, anotherExample } from '../src/data.js';
+import { sortData, } from '../src/data.js';
 
 
 describe('example', () => {
