@@ -1,0 +1,537 @@
+* {
+    margin: 0px;
+    padding: 0px;    
+}
+header, footer{
+    background-color: rgba(242, 244, 248, 0.466);
+    background-size: cover;
+    padding: 5px;
+}
+header{
+    top: 0px;
+}
+/* Primera pagina */
+body{
+    background: url(img/pokemongo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
+.display-1 {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    
+}
+#display1 {     
+    margin-top: 0px;
+    background-size: cover;
+    background-position: center center; 
+    background-repeat: no-repeat;
+    height: 665px;    
+}
+
+#conten-btn{
+    padding: 0%;
+    margin-top: 380px;
+    margin-left: 360px;
+}
+#btn-start{    
+    padding: 15px 50px;
+    border-bottom: 5px solid rgb(4, 6, 114);
+    border-top: 5px solid rgb(4, 6, 114);  
+    
+    border-radius: 16px;
+    
+    font-size: 24px;
+    text-transform: uppercase;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    background-color: yellow;    
+}
+#display2, #listCalcuPoke {
+    display: none;    
+}
+/*.fondo-general{
+    background-color: rgba(233, 250, 2, 0.247);
+    
+}*/
+#fondo-principal{
+    top: 0px;
+    margin: auto;
+     
+    width: 1400px;
+    height: 506px;
+    background: url(img/fondopoke.png) 100%;
+    background-position: center center;  
+    background-repeat: repeat; 
+    
+    border-style: solid 30px;
+    border-color: blue;
+}
+/* Segunda pagina */
+#box-logo{    
+    margin-top: 0%;
+    width: 310px;
+    height: 149px;
+    margin-left: 65px;
+    right: 1065px;
+    bottom: 825px;
+
+    background: #FFD708;
+    border: 7px solid #27476C;
+    box-sizing: border-box;
+    border-radius: 10px;
+    float: initial;
+}
+#logo-pag2{
+    margin-top: 8px;
+    margin-left: 39px;
+    width: 210px;
+    height: 110px;
+}
+#navegador{
+    margin-top: 29px;
+    position: absolute;
+    width: 1095px;
+    height: 64px;
+    left: 373px;
+    top: 0px;
+
+    background: #373CA2;
+    border: 7px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+color: #FFFFFF;
+}
+.poke-Data{
+    padding: auto;
+    
+    margin-left: 25px;
+    width: 200px;
+    height: 40px;
+    border: 0px;
+    
+
+    background: #373CA2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+.category-P{
+    
+    width: 270px;
+    height: 500px;
+    margin-left: 25px;
+    margin-top: 10px;
+
+    background: rgba(55, 60, 162, 0.64);
+    border: 7px solid #373CA2;
+    box-sizing: border-box;
+}
+h2 { 
+    padding: 5px;   
+    width: 230px;
+    height: 27px;
+    margin-left: 7px;
+    margin-top: 5px;
+
+    background: #373CA2;
+    border-radius: 8px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+}
+.btnCategoria{
+    padding: auto;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 200px;
+    height: 40px;
+    
+
+    background: #FFFDD9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+
+}
+
+.filtrado{
+    position: absolute;
+    width: 795px;
+    height: 37px;
+    left: 524px;
+    top: 100px;
+
+    background: #373CA2;
+    border-radius: 8px;
+}
+.txtfiltro{
+    padding: 10px 20px;
+    width: 190px;
+    height: 35px;
+    left: 409px;
+    top: 27px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.SelectOrder {
+    margin-top: 6px;
+    width: 150px; 
+    height: 20px;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+   
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#lista {
+    position: absolute;
+    width: 1056px;
+    height: 535px;
+    left: 388px;
+    top: 150px;
+
+    background: rgba(255, 214, 8, 0.637);
+    background-attachment: fixed;
+    border: 5px solid #373CA2;
+    box-sizing: border-box;
+    border-radius: 11px;
+    overflow: auto;
+
+
+}
+
+
+
+/* Mostrar pokemones*/
+figure :hover{
+    color: blue;
+}.numberP{
+    text-align: center;
+}
+.nameP{
+    padding: 10px 0 20px 0;
+text-align: center;
+font-weight: bold;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-style: normal;
+text-transform: uppercase; 
+font-size: 14px;
+}
+
+.card-Container{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-Card:hover .card-Container{
+    transform: rotateY(180deg);
+}
+
+.poke-block,
+.pokemon-block-back{
+  width: 90%;
+  height: 90%;
+  backface-visibility: hidden;
+
+}
+
+.pokemon-block-back{
+    transform: rotateY(180deg);
+  position: absolute;
+  top: 0%;
+}
+.poke-block ,
+.pokemon-block-back{
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+
+}
+
+.img-Contain{
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.poke-block p{
+    margin: 5px
+}
+.lista{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px,1fr));
+    background: khaki;
+    }
+
+/* --------------------------------*/
+/* MOSTRAR ESTADISTICAS */
+.fuera {
+    background: rgba(0, 0, 0, .5);
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-content: center;
+}
+.estadistica{
+    background: #e6f1a3;
+    border: 6px solid #565cd8;
+    border-radius: 12px;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;    
+    width: 700px;
+    max-width: 700px;
+    margin: 0;
+     
+    
+}
+
+.btnCategoriaPPP{
+    padding: auto;
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 150px;
+    height: 40px;
+    
+
+    background: #373CA2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;}
+    
+#respuestas {
+    background: white;
+    background-position: center;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    left: 100px;
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    
+
+    }
+
+#cont-tipos {
+    align-self: center;
+    padding-top: 10px;
+    margin-left: 70px;
+    }
+/*POPUP*/
+
+/*.overlay {
+        background: rgba(0, 0, 0, .5);
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.overlay.active {
+    visibility: visible;
+}
+.popup {
+    background: #f8f8f8;
+    box-shadow: 0px 0px 5px 0px;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    
+    }
+
+.popup .btn-cerrar-popup {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #BBBBBB;
+    transition: .3S ease all;
+}
+
+.popup .btn-cerrar-popup:hover {
+    color: #000;
+}
+.popup.active {
+    opacity: 1;
+}*/
+.modal-container{
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-content {
+    background: #fffb1d;
+    border: 6px solid #373CA2;
+   
+    border-radius: 12px;
+   
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+   
+    width: 900px;
+    max-width: 900px;
+    margin: 0; 
+    
+}
+.div-img-modal, .div-about-modal, .div-atrib-modal, .div-power-modal, .div-resistant-modal, .div-evolution-modal {
+    float: left;
+    margin: 10px;
+    padding: 1em;      
+    
+    background: #FFFEFE;
+    border: 4px solid #373CA2;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 17px;
+    
+    font-size: 16px;
+    text-align: center;
+     
+    
+}
+#div-img-modal{
+    height: 200px;
+    width: 180px;
+    text-transform: uppercase;
+    font-weight: bold;  
+}
+.div-about-modal{
+    width: 500px;
+    height: 200px;
+    align-items: center;
+    align-content: center;
+}
+.div-atrib-modal {
+    width: 170px;
+    font-size: 16px;
+    }
+.div-resistant-modal {
+    width: 160px;
+    font-size: 16px;
+    
+}
+.div-power-modal, .div-evolution-modal {
+    font-size: 16px;
+}
+.div-power-modal {
+    margin-top: 20px;
+    top: 70px;
+    width: 650px;
+    height: 250px;
+    
+}
+.div-evolution-modal {
+    
+    width: 150px;
+    height: 170px;
+}
+td, tr {
+    padding: 10px;
+    align-content: center;
+    
+}
+.tableResi {
+    align-content: center;
+    display: flex;
+}
+
+#list-calculo {
+        margin-left: 230px;
+        
+}
+
+#btn-Exit {
+
+    margin-left: 270px; 
+    width: 150px;
+    height: 40px;
+    border-bottom: 5px solid rgb(4, 6, 114);
+    border-top: 5px solid rgb(4, 6, 114);  
+    
+    border-radius: 10px;
+    
+    font-size: 20px;
+    text-transform: uppercase;
+    color: rgb(10, 10, 10);
+    text-align: center;
+    background-color: yellow; 
+}
