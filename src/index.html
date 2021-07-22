@@ -6,107 +6,118 @@
   <title>Data Lovers</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 <header id="encabezado">hola</header>
 
-<body>
 
+  <main>
+ <div id="responsive">
   <section class="display-1" id="display1">
     <!--<img class="fondo" src="img/fondoPokePant1.jpg" alt="" width="100%">-->
     <div id="conten-btn">
       <button class="btnStart" id="btn-start">Entrar</button>
     </div>
   </section>
-
+ 
   <section class="display-2" id="display2">
+
+    <div id="box-logo">
+      <img id="logo-pag2" src="./img/logopoke.png" alt="">
+    </div>
+
+    <nav id="navegador">
+      <button class="poke-Data" id="btn-inicio">Inicio</button>
+      <button class="poke-Data" id="pokeData">Pokedex</button>
+      <button class="poke-Data" id="btn-play">Play</button>
+      <button class="poke-Data" id="btn-nove">Estadistica</button>
+    </nav>
+
+
     <div class="fondo-general">
       <div id="fondo-principal">
-        <div id="box-logo">
-          <img id="logo-pag2" src="img/logopoke.png" alt="">
-        </div>
 
-        <nav id="navegador">
-          <button class="poke-Data" id="btn-inicio">Inicio</button>
-          <button class="poke-Data" id="pokeData">Pokedex</button>
-          <button class="poke-Data" id="btn-play">Play</button>
-          <button class="poke-Data" id="btn-nove">Novedades</button>
-        </nav>
+        <aside class="category-P" id="categoryP">
+          <h2>CATEGORIA</h2>
+          <button id="btn-CategoriaF" value="fire" class="btnCategoria">fuego</button>
+          <button id="btn-CategoriaA" value="electric" class="btnCategoria">electrico</button>
+          <button id="btn-CategoriaW" value="water" class="btnCategoria">agua</button>
+          <button id="btn-CategoriaP" value="bug" class="btnCategoria">insecto</button>
+          <button id="btn-CategoriaPo" value="poison" class="btnCategoria">veneno</button>
+          <button id="btn-CategoriaGr" value="grass" class="btnCategoria">hierba</button>
+          <button id="btn-CategoriaAll" value="todos" class="btnCategoria">todos</button>
+        </aside>
 
-        <main>
+        <section class="filtrado">
+          <label class="txtfiltro">nombre</label>
+          <input type="text" class="SelectOrder" id="inputOrder">
 
+          <label class="txtfiltro">orden</label>
+          <select name="" class="SelectOrder" id="opciones">
+            <option type="text" value="ascendente">a-z</option>
+            <option type="text" value="descendente">z-a</option>
+          </select>
 
-          <aside class="category-P" id="categoryP">
-            <h2>CATEGORIA</h2>
-            <button id="btn-CategoriaF" value="fire" class="btnCategoria">fuego</button>
-            <button id="btn-CategoriaA" value="electric" class="btnCategoria">electrico</button>
-            <button id="btn-CategoriaW" value="water" class="btnCategoria">agua</button>
-            <button id="btn-CategoriaP" value="bug" class="btnCategoria">insecto</button>
-            <button id="btn-CategoriaPo" value="poison" class="btnCategoria">veneno</button>
-            <button id="btn-CategoriaGr" value="grass" class="btnCategoria">hierba</button>
-            <button id="btn-CategoriaAll" value="todos" class="btnCategoria">todos</button>
-          </aside>
+          <label class="txtfiltro">cp</label>
+          <input type="text" class="SelectOrder" id="inputCP">
+        </section>
 
-
-
-
-          <section class="filtrado">
-            <label class="txtfiltro">nombre</label>
-            <input type="text" class="SelectOrder" id="inputOrder">
-
-            <label class="txtfiltro">orden</label>
-            <select name="" class="SelectOrder" id="opciones">
-              <option type="text" value="ascendente">a-z</option>
-              <option type="text" value="descendente">z-a</option>
-            </select>
-
-            <label class="txtfiltro">cp</label>
-            <input type="text" class="SelectOrder" id="inputCP">
-          </section>
-
-          <section id="lista" class="lista">
-            <button id="modal">hola</button>
-          </section>
-          <section id="card">
-            <label id="name"></label>
-          </section>
+        <section id="lista" class="lista">
+          <button id="modal">hola</button>
+        </section>
+        <section id="card">
+          <label id="name"></label>
+        </section>
       </div>
     </div>
   </section>
-
-
   <!--------------ESTADISTICA------------------>
-
 
   <section id="listCalcuPoke">
     <div class="fuera">
       <div class="estadistica">
-      <aside class="category-PP" id="cont-tipos">
+        <aside class="category-PP" id="cont-tipos">
 
-        <button id="btn-CategoriaF" value="fire" class="btnCategoriaPPP">fuego</button>
-        <button id="btn-CategoriaA" value="electric" class="btnCategoriaPPP">electrico</button>
-        <button id="btn-CategoriaW" value="water" class="btnCategoriaPPP">agua</button>
-        <button id="btn-CategoriaP" value="bug" class="btnCategoriaPPP">insecto</button>
-        <button id="btn-CategoriaPo" value="poison" class="btnCategoriaPPP">veneno</button>
-        <button id="btn-CategoriaGr" value="grass" class="btnCategoriaPPP">hierba</button>
-      </aside>
-    
+          <button id="btn-CategoriaFA" value="fire" class="btnCategoriaPPP">fuego</button>
+          <button id="btn-CategoriaAE" value="electric" class="btnCategoriaPPP">electrico</button>
+          <button id="btn-CategoriaWI" value="water" class="btnCategoriaPPP">agua</button>
+          <button id="btn-CategoriaPO" value="bug" class="btnCategoriaPPP">insecto</button>
+          <button id="btn-CategoriaPoU" value="poison" class="btnCategoriaPPP">veneno</button>
+          <button id="btn-CategoriaGrA" value="grass" class="btnCategoriaPPP">hierba</button>
+
+          <button id="btn-CategoriaFAO" value="normal" class="btnCategoriaPPP">normal</button>
+          <button id="btn-CategoriaAEA" value="fight" class="btnCategoriaPPP">pelea</button>
+          <button id="btn-CategoriaWIR" value="ground" class="btnCategoriaPPP">tierra</button>
+          <button id="btn-CategoriaPOK" value="flying" class="btnCategoriaPPP">volador</button>
+          <button id="btn-CategoriaPoUI" value="psychic" class="btnCategoriaPPP">psiquico</button>
+          <button id="btn-CategoriaGrAP" value="rock" class="btnCategoriaPPP">roca</button>
+
+          <button id="btn-CategoriaFAR" value="ghost" class="btnCategoriaPPP">fantasma</button>
+          <button id="btn-CategoriaAEL" value="ice" class="btnCategoriaPPP">hielo</button>
+          <button id="btn-CategoriaWIM" value="dragon" class="btnCategoriaPPP">dragon</button>
+          <button id="btn-CategoriaPOC" value="dark" class="btnCategoriaPPP">oscuro</button>
+          <button id="btn-CategoriaPoUD" value="steel" class="btnCategoriaPPP">hierro</button>
+          <button id="btn-CategoriaGrAT" value="fairy" class="btnCategoriaPPP">hada</button>
+          
+        </aside>
+
         <div class="txtEstadistica">
-      | <section class="contListCalc">
+           <section class="contListCalc">
 
-        <section id="list-calculo">
-          <section class="stats-Po" id="respuestas">
+            <div id="list-calculo">
+              <section class="stats-Po" id="respuestas">
 
+              </section>
+             
+            </div>
+            <button id="btn-Exit" value="" class="">SALIR</button>
           </section>
-
-        </section>
-
-      </section>
-    </div>
-    </div>
+        </div>
+      </div>
     </div>
 
   </section>
-
-  <!------------FIN-MODAL---------------->
+</div>
+    <!------------FIN-MODAL---------------->
   </main>
 
 

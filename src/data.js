@@ -2,25 +2,25 @@
 
 const funciones = {
 
-  sortData: (data, sortOrder)=> {
-    let dataPoke= data.pokemon;
+  sortData: (data, sortOrder) => {
+   // let dataPoke= data.pokemon;
   switch (sortOrder) {
     
     case 'ascendente':
       
-     dataPoke.sort((a,b)=> {
+     data.sort((a,b)=> {
       if(a.name.toLowerCase() < b.name.toLowerCase()) 
         return -1; 
-     });return dataPoke;
+     });return data;
 
     case 'descendente':
       
-      dataPoke.sort((a,b)=> {
+      data.sort((a,b)=> {
         if(b.name.toLowerCase() < a.name.toLowerCase()) 
           return -1; 
-       });return dataPoke;      
+       });return data;      
   
-    default: return dataPoke
+    //default: return data;
   
   }},
 
@@ -43,7 +43,7 @@ const funciones = {
         }
       }
     }
-    return ('El porcentaje del pokemon de tipo ' + typePoke + ' es: ' + ((tipoPorcen.length) / 251 * 100).toFixed(2).bold() + '%');
+    return (((tipoPorcen.length) / 251 * 100).toFixed(2));
   },
 
     
@@ -51,9 +51,7 @@ const funciones = {
   
 
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
 
 
 

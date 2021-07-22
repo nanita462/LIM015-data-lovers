@@ -2,7 +2,7 @@ import  funciones  from './data.js';
 import data from './data/pokemon/pokemon.js';
 
 
-console.log(data)
+//console.log(data)
 const dataPoke = data.pokemon;
 
 
@@ -70,8 +70,22 @@ function showData(data){
        // }) ; 
          
           function showModal() {  
-            console.log("SI FUNCIONA");
-            
+            //console.log("SI FUNCIONA");
+
+            const attackSpecial = element['special-attack'].map(attack => {
+                return `<tr><td>${attack.name}</td>
+                <td>${attack.type}</td>
+                <td>${attack['base-damage']}</td>
+                <td>${attack['energy']}</td>
+                <td>${attack['move-duration-seg']}</td>`
+            })
+           // const resistancehtml = element.resistant.map(resistance => {
+               // return `<tr><td><img src="./img/${resistance}.png" width="30px" /></td>`;
+            //})
+
+          
+          
+
                       
             printModal(`<div class="div-img-modal" id="div-img-modal">
             <img src="${element.img}" alt="" id="img-pokemon-modal" class="image-modal">            
@@ -82,11 +96,38 @@ function showData(data){
             </article>
             </section>
             </div>
-
             <div class="div-about-modal">
             <p class="description"><strong>About :</strong>
             <span> ${element.about} </span> </p>
+
+            <table class="tableResi" with 100%>
+                <tr>
+                    <td colspan="5"><strong>Resistant:</strong></td>
+                </tr>
+                <tr>
+                <tr><td>${element.resistant[0]}</td>
+                <td>${element.resistant[1]} </td>
+                <td>${element.resistant[2]} </td>
+                <td>${element.resistant[3]} </td>
+                <td>${element.resistant[4]} </td>
+                </td>  
+                    
+                                            
+            </table>
             </div>
+
+            <div class="div-resistant-modal">
+            
+            <p class="list-weaknesses"><strong>Debilidades :</strong> <br>
+            <span> ${element.weaknesses[0]} </span><br><br>
+            <span> ${element.weaknesses[1]} </span><br><br>
+            <span> ${element.weaknesses[2]} </span><br><br>
+            <span> ${element.weaknesses[3]} </span><br><br>          
+            </p>
+                      
+            </div>
+            
+
             <div class="div-atrib-modal">
             <p class="generation"><strong>Generación :</strong><br>
             <span> ${element.generation['name']} </span> </p> <br>
@@ -98,35 +139,26 @@ function showData(data){
             <span> ${element.type} </span> </p> <br>
             </div> 
 
-            <div class="div-resistant-modal">
-            <p class="resistencia"><strong>Resistant :</strong><br>
-            <span> ${element.resistant[0]} </span> <br>
-            <span> ${element.resistant[1]} </span> <br>
-            <span> ${element.resistant[2]} </span> <br>
-            <span> ${element.resistant[3]} </span> <br>
-            <span> ${element.resistant[4]} </span> <br>
-            </p> <br><br>
-            <p class="list-weaknesses"><strong>Debilidades :</strong> <br>
-            <span> ${element.weaknesses[0]} </span><br>
-            <span> ${element.weaknesses[1]} </span><br>
-            <span> ${element.weaknesses[2]} </span><br>           
-            </p>            
-            </div>
+            
 
+            
             <div class="div-power-modal">
-            <p class="list-weaknesses"><strong>Special-Attack :</strong> <br>
-            <span> ${element['special-attack[name]']} </span> </p> <br> 
-            <p class="list-weaknesses"><strong>Egg :</strong> <br>
-            <span> ${element.egg} </span> </p> <br>
-            <p class="list-weaknesses"><strong>Spawn-Chance :</strong> <br>
-            <span> ${element.spawn_chance} </span> </p> <br>
-            </div>   
+            <table class="TableAttack with 100%>
+                <tr>
+                    <td colspan="5"><strong>Special-Attack :</strong></td>
+                </tr>
+                <tr>
+                    <td><strong>NOMBRE</strong></td>
+                    <td><strong>TIPOS</strong></td>
+                    <td><strong>BASE DAÑOS</strong></td>
+                    <td><strong>ENERGIA</strong></td>
+                    <td><strong>DURACIÓN MOVIMIENTO SEGUNDO</strong></td>
+                </td>
+                ${attackSpecial.join("")}  
+            </table>
+            </div>            
            
-            <div class="div-evolution-modal">
-            <p class="list-weaknesses"><strong>Evolution :</strong> <br> 
-            <span> ${element['next-evolution.name']} </span> 
-            </p>           
-            </div>
+            
             `                
             );
 
@@ -137,20 +169,20 @@ function showData(data){
             <p class="nameP"></p>
             ${element.name}`;
             console.log("si funciona");*/
-        };
+        }
     
      
-    })};
+    })}
 
    
-
+//MOSTRAR DATA ORDENADA
 const opciones= document.getElementById('opciones')
     opciones.addEventListener('change',(event)=>{
-        lista.innerHTML="";
-        let dat= funciones.sortData(data,event.target.value);
+        document.getElementById("lista").innerHTML="";
+        let dat= funciones.sortData(dataPoke,event.target.value);
         showData(dat);
         
-        console.log(dat);
+        //console.log(dat);
 
 });
 
@@ -174,8 +206,8 @@ function searchPokeByName (){
         
         showData(dat);
         
-        console.log(dat);  
-} ;
+       // console.log(dat);  
+} 
 
 const searchPokeByCP= document.querySelector('#inputCP')
 searchPokeByCP.addEventListener('keyup',filterDataByF);
@@ -186,9 +218,9 @@ function filterDataByF() {
     const numValue= searchPokeByCP.value;
     let dat= funciones.filterDataByCP(dataPoke,numValue);
     showData(dat);
-   console.log(dat);
+   //console.log(dat);
 
-} ;
+} 
 
 const searchPokeByT=document.querySelectorAll('.btnCategoria')
 
@@ -196,7 +228,7 @@ function searchPokeByTy(event){
     document.getElementById('lista').innerHTML= "";
     let dat= funciones.filterDataByType(dataPoke, event.target.value);
     showData(dat);
-};
+}
 
 searchPokeByT.forEach((element) => {
     element.addEventListener('click', searchPokeByTy)
@@ -223,7 +255,17 @@ const calPo= document.getElementById("btn-nove")
 
 const containerCalcu = document.getElementById('cont-tipos');
 containerCalcu.addEventListener('click', (event) => { 
-  document.getElementById('respuestas').innerHTML = (funciones.computeStats(dataPoke, event.target.getAttribute('value')))
+  document.getElementById('respuestas').innerHTML = "El porcentaje es " +(funciones.computeStats(dataPoke, event.target.getAttribute('value')) +'%')
+});
+
+const btnClose = document.getElementById("btn-Exit");
+btnClose.addEventListener('click', () => {
+    document.getElementById('listCalcuPoke').style.display = 'none';
+    document.getElementById('display2').style.display ="block";
+    document.getElementById('display1').style.display ="none";
+
+    
+    
 });
 
     
@@ -249,7 +291,7 @@ btnCerrarPopup.addEventListener('click', function() {
 
 const addAttributes = (element, attrObj) => {
     for(let attr in attrObj) {
-        if(attrObj.hasOwnProperty(attr))
+        if(Object.prototype.hasOwnProperty.call(attrObj, attr))
         element.setAttribute(attr,attrObj[attr])
     }
 };
